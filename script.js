@@ -37,10 +37,10 @@ document.getElementById('puzzleImage').addEventListener('click', function() {
     clickCount++;
     const overlayText = document.getElementById('overlayText');
     overlayText.style.display = 'block';
-    typeText("The cold wild breezes around\n<span class='cursive'>THE TOWER</span>", overlayText);
+    typeText("The cold wind breezes around\n<span class='cursive'>THE TOWER</span>", overlayText);
 
     if (clickCount >= 10) {
-        console.log('20 clicks reached, changing to jail.jpg');
+        console.log('10 clicks reached, changing to jail.jpg');
         document.body.style.backgroundColor = 'black';
         document.querySelector('.puzzle-container').style.display = 'none';
         setTimeout(() => {
